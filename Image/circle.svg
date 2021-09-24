@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="322" height="118"
+  viewBox="0 0 322 118">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_1);
+      }
+
+      .cls-2,
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 0px;
+
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_1">
+      <rect width="322" height="118" />
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" class="cls-1">
+    <rect class="cls-5" width="322" height="118" />
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-2" transform="translate(19 14)">
+      <circle class="cls-3" cx="45" cy="45" r="45" />
+      <circle class="cls-4" cx="45" cy="45" r="40" />
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-2" transform="translate(116 14)">
+      <circle class="cls-3" cx="45" cy="45" r="45" />
+      <circle class="cls-4" cx="45" cy="45" r="40" />
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" class="cls-2" transform="translate(213 14)">
+      <circle class="cls-3" cx="45" cy="45" r="45" />
+      <circle class="cls-4" cx="45" cy="45" r="40" />
+    </g>
+  </g>
+</svg>
