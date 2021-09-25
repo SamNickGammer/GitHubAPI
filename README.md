@@ -1,2 +1,2 @@
 # GitHubAPI
-## Created By SamNickGammer
+### Created By SamNickGammer
