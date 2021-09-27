@@ -30,6 +30,7 @@ function getRepos(username) {
     console.log(repos);
     addReposToCard(repos);
     repoDetails(repos);
+    graphDetails(username);
   });
 }
 
@@ -56,6 +57,7 @@ function createUserCard(user) {
                     </ul>
                     <div id="repos"></div>
                     <img id="moreOption" class="logoSimple" src="./Image/circle.svg" alt="circle" onclick="moreOptionFn()">
+                    <img id="graph1" class="logoSimple" src="./Image/insights_white_24dp.svg" alt="insights_white_24dp" onclick="graphView()">
                 </div>
             </div>`;
 }
@@ -111,6 +113,52 @@ function repoDetails(repos) {
 //     });
 //     reposDet.innerHTML = admin;
 // }
+
+function graphDetails(username) {
+            const graphID = document.getElementById("graphDetails");
+            const divCard = document.createElement("div");
+            const priDiv = document.createElement("div");
+            divCard.className = "card";
+            // --------------------------------- Contribution Graph ------------------------------------------------------------
+            const contributionGraph = document.createElement("img");
+            contributionGraph.src = `https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${username}&theme=dracula`;
+
+            contributionGraph.alt = 'Contribution Graph';
+            // --------------------------------- Your Trophis ------------------------------------------------------------
+            const trophiesImg = document.createElement("img");
+            trophiesImg.src = `https://github-profile-trophy.vercel.app/?username=${username}&column=8&margin-w=-10&margin-h=10&no-bg=true&no-frame=true&theme=juicyfresh`;
+            trophiesImg.alt = 'Contribution Graph';
+
+
+            priDiv.appendChild(trophiesImg);
+            priDiv.appendChild(contributionGraph);
+
+
+            divCard.appendChild(priDiv)
+            graphID.appendChild(divCard);
+
+        }
+
+        // function repoDetails(repos) {
+        //     const admin = repos.forEach((repo) => {
+        //         `<div class="card">
+        //             <a href="${repo.html_url}">${repo.name}</a>
+        //         </div>`;
+        //     });
+        //     reposDet.innerHTML = admin;
+        // }
+
+        var temp = 0
+        function graphView() {
+            const detailVisiblity = document.getElementById('graphDetails');
+            if (temp == 0) {
+                detailVisiblity.style.display = "block";
+                temp += 1;
+            } else if (temp == 1) {
+                detailVisiblity.style.display = "none";
+                temp = 0;
+            }
+        }
 
 var tmp = 0;
 function moreOptionFn() {
